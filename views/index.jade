@@ -1,8 +1,21 @@
 extends layout
 
 block body
-  .pxcontainer
-    p fucking text
+  .sitewrap
+  .getdown-top#nav
+    a.main-nav.img-rounded(href='#maincontent')
+      .floating-logo.atomic-bomb-on-the-icon
+  header#header
+      .header-container
+        table.featuredText
+            .strapline
+            .getdown2#nav2
+              a.logo(href='#maincontent')
+                img.img-rounded.img-scale(src='/images/backgroundcandidate1.jpg', alt='logo')
+              .title-container
+                .stockickr-at-the-top<span class=hasher>#</span>stockickr
+              .intro-text welcome to our crowdfunding page
+  a(name='maincontent')                
   nav.navbar.navbar-default(role='navigation')
     .container-fluid
       // Brand and toggle get grouped for better mobile display
@@ -43,26 +56,28 @@ block body
               b.caret
             ul.dropdown-menu
               li
-                a(href='#') Upload            
-    // /.navbar-collapse
-  // /.container-fluid
+               a(href='#') Upload            
+      // /.navbar-collapse
+    // /.container-fluid
 
-  div
-    h2 My Blog
-    ul
-      li
-        a(href='/') Home
-      li
-        a(href='/addPost') Add a new post
+    div
+      h2 My Blog
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/addPost') Add a new post
 
-    div(ng-view)
+      div(ng-view)
 
   script(src='js/lib/angular/angular.js')
+  script(src='js/sripts.js')
   script(src='js/app.js')
   script(src='js/services.js')
   script(src='js/controllers.js')
   script(src='js/filters.js')
   script(src='js/directives.js')
+  script(src='javascripts/scripts.js')
   script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js', type='text/javascript')
   script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
   script(src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js")

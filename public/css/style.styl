@@ -1,5 +1,7 @@
 @import '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css';
 @import 'http://stockickr.com/g/4a6e868cfce70f/stylesheets/f/fonts.css';
+@import 'http://http://stockickr.com/crowdfund/stylesheets/style.css';
+
 
 .menu
   list-style none
@@ -18,7 +20,105 @@
     &:nth-child(1):before
       content ""
       padding 0
-.pxcontainer
-  height 1000
+//fullBleedThing
+.sitewrap:before, .sitewrap:after
+  content ""
+  display table
+.sitewrap
+  background #ffff repeat scroll 1 0 0
+  &:after
+    clear both
+.main-nav
+  z-index 1
+  position fixed
+  float left
+  background-color rgba(255,255,255,0.01)
+  opacity .99
+  padding-left 2%
+  padding-top 2%
+  height auto
+  width auto
+#tiles
+  margin 50px
+  li
+    width 357px
+    height 200px
+    margin 20em auto
+    background #333
+#header
+  background src('/images/backgroundcandidate1.jpg') center center fixed
+  background-size cover
+  background-position left top
+  height 100%
+  width 100%
+  min-height 100%
+  min-width 357px
+  text-align center
+.header-container  
+  text-align center
+  min-width 100%
+  padding-top 12%
+.strapline
+  background-color #fff
+  background-color rgba(255,255,255,0.22)
+  opacity 1
+  width 100%
+  height 40%
+  h4
+    color black
+    font-size 4em
+    text-align center
+  h2
+    color black
+    font-family 'proxima_nova_rgbold'
+    font-size 2em
+    letter-spacing 0.1em
+    margin 36px auto 20px
+    text-align center
+.title-container
+  .dash
+    border-bottom 3px solid #CCCCCC
+    width 30px
+.img-scale
+  max-width 10%
+  min-height 75px
+  min-width 75px
+.stockickr-at-the-top
+  padding-top 80px
+  text-align center
+  position relative
+  font-family 'leagueG'
+  color white
+  text-transform uppercase
+  font-size 400%
+  text-shadow .5px 0px .5px #434343
+.hasher
+  color red
+.intro-text
+  padding-bottom 30px
+  color white  
+  margin 60px auto 60px auto
+  opacity 0.85
+  position relative
+  text-align center
+  width 100%
+  font-size 175%
+  text-shadow .5px 0px .5px #434343
+.logo
+  vertical-align middle
+  padding-top 50px
+table
+  border-collapse collapse
+  border-spacing 0
+  opacity 1
+.featuredText
+  height 20%
+  left 0
+  position relative
+  text-align center  
+  padding-bottom 200px
+  width 100%
+  z-index 5
+//end of header parallax
 
 

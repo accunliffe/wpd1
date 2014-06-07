@@ -1,0 +1,24 @@
+@import '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css';
+@import 'http://stockickr.com/g/4a6e868cfce70f/stylesheets/f/fonts.css';
+
+.menu
+  list-style none
+  border-bottom 0.1em solid black
+  margin-bottom 2em
+  padding 0 0 0.5em
+  &:before
+    content "["
+  &:after
+    content "]"
+  & > li
+    display inline
+    &:before
+      content "|"
+      padding-right 0.3em
+    &:nth-child(1):before
+      content ""
+      padding 0
+.pxcontainer
+  height 1000
+
+
